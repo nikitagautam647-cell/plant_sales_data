@@ -1,6 +1,6 @@
 # Plant Sales Data — Sample Dataset and Analysis
 
-This repository provides a small, self-contained sample dataset for a plant nursery/garden store. It's designed for learning, prototyping Power BI reports, and practicing data analysis with Python.
+This repository provides a small, self-contained sample dataset for a plant nursery/garden store. It's designed for learning and prototyping Power BI reports.
 
 ---
 
@@ -22,7 +22,7 @@ This repository provides a small, self-contained sample dataset for a plant nurs
 
 ## Overview
 
-Plant Sales Data contains example sales transactions from a fictional botanical supply store, including comprehensive data cleaning workflows and analysis examples. Perfect for building Power BI dashboards or practicing exploratory data analysis with Python.
+Plant Sales Data contains example sales transactions from a fictional botanical supply store, including comprehensive data cleaning workflows and analysis examples. Perfect for building Power BI dashboards.
 
 **Dataset Highlights:**
 - 40 sales transactions across 3 months (January - March 2025)
@@ -45,7 +45,6 @@ Plant Sales Data contains example sales transactions from a fictional botanical 
 
 - **Power BI Desktop** - Report building and visualization (Primary tool)
 - **Delimited Text Files** (pipe-separated) - Data interchange format
-- **Python 3.7+** *(Optional)* - For data cloning and preprocessing only
 
 ## Installation
 
@@ -55,102 +54,12 @@ git clone <repository-url>
 cd plant_sales_data
 ```
 
-2. (Optional) Create and activate a Python virtual environment:
 
-```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
-```
 
-3. Install Python dependencies (if using Python analysis):
-
-```bash
-pip install -r requirements.txt
-```
-
-If `requirements.txt` is missing, add packages such as `pandas` and `matplotlib`.
-
-## Usage
-
-- Open Power BI Desktop and import `data/clean_sales.txt` to build visual reports and dashboards.
-- Or run the example Python script to produce quick summaries:
-
-```bash
-python clone_data.py
-```
-
-Generated summaries appear in `data/result_summary.txt` and chart images are saved to `reports/`.
-
-## Analysis & Questions
-
-Use this repo to answer questions like:
-
-- Which products and categories sell best?
-- How do sales change by month and by store region?
-- What are the top-performing customer segments?
-- Are there seasonal patterns or outliers to investigate?
-
-## Results & Insights
-
-Document key findings from your dataset here (examples):
-
-- Total sales for the sample period: $X,XXX
-- Top product category: Widgets (Y% of revenue)
-- Peak sales month: December
-
-Replace these placeholders with actual results after running analysis.
-
-## Project Structure
 
 ```
-├── LICENSE
-├── README.md
-├── data/
-│   ├── raw_sales.txt
-│   ├── clean_sales.txt
-│   └── result_summary.txt
-├── reports/
-│   └── (charts and report images)
-├── clone_data.py      # example Python script
-├── requirements.txt      # Python dependencies (optional)
-├── results/
-│   └── (additional results)
-```
 
-## Contributing
 
-Contributions welcome. Suggested workflow:
-
-1. Fork this repository.
-2. Create a feature branch.
-3. Open a pull request describing changes.
-
-## License
-
-This project uses the MIT License — see the `LICENSE` file for details.
-
-## Contact
-
-Project maintainer: Nikita Gautam — nikitagautam647@gmail.com
-
-For questions or feedback, open an issue in this repository.
-```
-
-### Python Setup *(Optional)*
-If you need Python for data cloning/preprocessing:
-
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
-# Install minimal dependencies
-pip install -r requirements.txt
-```
 
 ## Usage
 
@@ -207,24 +116,21 @@ For detailed analysis, see `data/result_summary.txt`
 .
 ├── README.md                        # This file
 ├── LICENSE                          # MIT License
-├── analyze_sales.py                 # Python analysis script
-├── requirements.txt                 # Python dependencies
-│
-├── data/
-│   clone_data.py                    # Python data cloning script (optional)
-├── requirements.txt                 # Python dependencies (optional)
 │
 ├── data/
 │   ├── raw_sales.txt               # Raw transaction export
 │   ├── clean_sales.txt             # Cleaned dataset for Power BI
-│   └── result_summary.txt          # Analysis summary and insights
+│   ├── result_summary.txt          # Analysis summary and insights
+│   └── clone_data.py               # Python data cloning script (optional)
 │
 ├── reports/
 │   └── [Power BI exports, PDFs]
 │
 └── results/
-    └── [Generated outputs, repo
-Contributions are welcome! Please follow this workflow:
+    └── [Generated outputs, repository]
+```
+
+## Contributing
 
 1. **Fork** this repository
 2. **Create** a feature branch: `git checkout -b feature/my-enhancement`
